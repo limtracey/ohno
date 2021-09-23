@@ -1,0 +1,20 @@
+{% extends 'polls/base.html' %}
+
+{% load bootstrap5 %}
+
+{% block title %}
+<h3>Write a deep thought</h3>
+{% endblock %}
+{% block content %}
+
+<form method="post" action="/polls/deepthoughts/" class="form-group">
+    {% csrf_token %}
+    <div class="input-group mb-3">
+        <div class = "input-group-prepend">
+            <button type="submit", name="OK" class ="btn btn-success">Create Thought</button>
+            </div>
+            {{form}}  
+        </div>  
+</form>
+
+{% endblock %}    

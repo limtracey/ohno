@@ -1,0 +1,16 @@
+{% extends 'polls/base.html' %}
+
+{% load bootstrap5 %}
+{% block title %}
+<h3>Deep Thoughts</h3>
+{% endblock %}
+{% block content %}
+
+<ul>
+{% for thought in thoughts %}
+    <hi>{{ thought.title_text }}</li>
+    <li>{{ thought.thought_text }}</li>
+{% endfor %}
+<ul>
+{% endblock %}
+

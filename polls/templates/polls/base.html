@@ -1,0 +1,49 @@
+{% extends 'polls/bootstrap.html' %}
+{% load bootstrap5 %}
+
+{% block bootstrap5_content %}
+
+        
+<body>
+    
+    
+    <div id="content", name="content", class="main">
+        <div class ="row justify-content-center">
+            <div class="col-8">
+                <h1 class="mt-2">Liam's Site</h1>
+                <hr class="mt-0 mb-4">
+                <h2 class="sidenav">
+                    <a href="/polls/">polls</a>
+                    <a href="/polls/deepthoughts/list">list</a>
+                    <a href="/polls/deepthoughts">deepthoughts</a>
+                </h2>
+                <hr class ="mt-0 mt=4">
+                {% block title %}
+                {% endblock %}
+                <hr class ="mt-0 mt=4">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    
+</body>        
+    
+
+        
+
+    </div>
+<footer>
+    <div class= "navbar navbar-inverse navbar-static-bottom" role="navigation">
+        <div class="navbar-text pull-left">
+        </div>
+        <div class= "navbar-text pull-right">
+        Author: Liam Tracey
+        </div>
+        <div class="navbar-text pull-left">
+        &copy; Copyright 2021 by Tracey Studios. All rights Reserved
+        </div>
+    </div>	
+</footer>
+{% endblock %}
